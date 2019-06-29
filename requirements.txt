@@ -1,0 +1,4 @@
+tensorflow
+unityagents
+jupyterlab
+torch
