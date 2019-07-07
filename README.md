@@ -43,19 +43,14 @@ The above code will setup all the required dependencies for you.
 Next you need to download the unity environment for collecting bananas, you should first clone this repo and also download, the unity environment according to the OS you're using. The steps are:
 
 1. Download the environment from one of the links below.  You need only select the environment that matches your operating system:
-    - Linux: [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P1/Banana/Banana_Linux.zip)
-    - Mac OSX: [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P1/Banana/Banana.app.zip)
-    - Windows (32-bit): [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P1/Banana/Banana_Windows_x86.zip)
-    - Windows (64-bit): [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P1/Banana/Banana_Windows_x86_64.zip)
+    Single Agent Links:
+    - Linux: [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P2/Reacher/one_agent/Reacher_Linux.zip)
+    - Mac OSX: [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P2/Reacher/one_agent/Reacher.app.zip)
+    - Windows (32-bit): [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P2/Reacher/one_agent/Reacher_Windows_x86.zip)
+    - Windows (64-bit): [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P2/Reacher/one_agent/Reacher_Windows_x86_64.zip)
+    Multiple Agents Links(20 Agents):
     
-   "- **Mac**: `\"path/to/Reacher.app\"`\n",
-    "- **Windows** (x86): `\"path/to/Reacher_Windows_x86/Reacher.exe\"`\n",
-    "- **Windows** (x86_64): `\"path/to/Reacher_Windows_x86_64/Reacher.exe\"`\n",
-    "- **Linux** (x86): `\"path/to/Reacher_Linux/Reacher.x86\"`\n",
-    "- **Linux** (x86_64): `\"path/to/Reacher_Linux/Reacher.x86_64\"`\n",
-    "- **Linux** (x86, headless): `\"path/to/Reacher_Linux_NoVis/Reacher.x86\"`\n",
-    "- **Linux** (x86_64, headless): `\"path/to/Reacher_Linux_NoVis/Reacher.x86_64\"`\n",
-    "\n",
+    
 You are now ready to open the jupyter notebook for training and testing the navigation agent!
 
 #### 2. Testing/Loading model from checkpoint:
