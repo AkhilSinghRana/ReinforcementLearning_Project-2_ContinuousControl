@@ -11,7 +11,7 @@ The observation space consists of 33 variables corresponding to position, rotati
 The task is episodic, and in order to solve the environment, the agent must get an average score of +30 over 100 consecutive episodes.
 
 The trained agent from my training is shown below.
-![TrainedAgent](./Results/TrainedAgent.mp4)
+![TrainedAgent](./Results/TrainedAgent.gif)
 
 You can learn more about the environment from the official Project instructions from Udacity [here](https://github.com/udacity/deep-reinforcement-learning/tree/master/p2_continuous-control)
 
