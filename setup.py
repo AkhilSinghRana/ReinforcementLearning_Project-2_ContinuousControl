@@ -13,7 +13,6 @@ def read(fname):
 def parse_requiremetns(fname):
     with open(fname) as f:
         required = f.read().splitlines()
-    print(required)
     return required
     
 setup(
