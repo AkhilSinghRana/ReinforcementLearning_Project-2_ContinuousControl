@@ -22,9 +22,9 @@ You can learn more about the environment from the official Project instructions 
 To reproduce the results from this repository, it is suggested to use virtual python environment and python version 3.6. Python 3.7 at the point of creating this repository does not support tensorflow=1.7 which is a dependency of unityagents package. Note* Python3.7 can still be used, if you know how to install pacakages from source, change requirements.txt and use latest version of tensorflow(tested with tf-v1.14). Follow these simple steps to:
 
 ```
-git clone https://github.com/AkhilSinghRana/NavigateAgent.git
+git clone https://github.com/AkhilSinghRana/ContinuousControl_RLProject.git
 
-cd NavigateAgent (cloned Repository root)
+cd ContinuousControl_RLProject (cloned Repository root)
 
 virtualenv env_name -p python3
 
@@ -48,7 +48,14 @@ Next you need to download the unity environment for collecting bananas, you shou
     - Windows (32-bit): [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P1/Banana/Banana_Windows_x86.zip)
     - Windows (64-bit): [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P1/Banana/Banana_Windows_x86_64.zip)
     
-   
+   "- **Mac**: `\"path/to/Reacher.app\"`\n",
+    "- **Windows** (x86): `\"path/to/Reacher_Windows_x86/Reacher.exe\"`\n",
+    "- **Windows** (x86_64): `\"path/to/Reacher_Windows_x86_64/Reacher.exe\"`\n",
+    "- **Linux** (x86): `\"path/to/Reacher_Linux/Reacher.x86\"`\n",
+    "- **Linux** (x86_64): `\"path/to/Reacher_Linux/Reacher.x86_64\"`\n",
+    "- **Linux** (x86, headless): `\"path/to/Reacher_Linux_NoVis/Reacher.x86\"`\n",
+    "- **Linux** (x86_64, headless): `\"path/to/Reacher_Linux_NoVis/Reacher.x86_64\"`\n",
+    "\n",
 You are now ready to open the jupyter notebook for training and testing the navigation agent!
 
 #### 2. Testing/Loading model from checkpoint:
