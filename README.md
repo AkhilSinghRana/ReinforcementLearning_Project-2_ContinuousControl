@@ -4,15 +4,12 @@
 
 ### Introduction
 
-The goal for this project is to train an agent to navigate in a large, square world. In addition to navigation, the agent has to learn to collect yellow bananas, while avoiding the blue ones! 
+In this environment, a double-jointed arm can move to target locations. A reward of +0.1 is provided for each step that the agent's hand is in the goal location. Thus, the goal of your agent is to maintain its position at the target location for as many time steps as possible.
 
-| Screenshot of the environement | Obseravation State and Action  |
-|---------------|-----------------|
-|![ScreenShot](./Results/EnvironmentIntro.png)      | The environment has state space of 37(Vectorized space including agents velocity and the positions information of surrounding objects) and 4 discrete actions available: 0 - move forward. 1 - move backward. 2 - turn left. 3 - turn right.|
+The observation space consists of 33 variables corresponding to position, rotation, velocity, and angular velocities of the arm. Each action is a vector with four numbers, corresponding to torque applicable to two joints. Every entry in the action vector should be a number between -1 and 1.
 
-A reward of +1 is provided for collecting a yellow banana, and a reward of -1 is provided for collecting a blue banana.  
 
-This task is episodic, and the condition to solve the environment is, to collect an average score of +13 or more, over 100 consecutive episodes.
+The task is episodic, and in order to solve the environment,  your agent must get an average score of +30 over 100 consecutive episodes.
 
 You can learn more about the environment from the official Project instructions from Udacity [here](https://github.com/udacity/deep-reinforcement-learning/tree/master/p1_navigation)
 
