@@ -1,5 +1,5 @@
 # Udacity Deep Reinforcment Learning Nanodegree 
-## Project 2: Continuous Crontrol Environment
+## Project 2: Continuous Control Environment
  This is my implementation to sovle Continuous control Environment(Reacher) from Unity ML-Agents.
 
 ### Introduction
@@ -21,7 +21,7 @@ You can learn more about the environment from the official Project instructions 
 
 To reproduce the results from this repository, it is suggested to use virtual python environment and python version 3.6. Python 3.7 at the point of creating this repository does not support tensorflow=1.7 which is a dependency of unityagents package. Note* Python3.7 can still be used, if you know how to install pacakages from source, change requirements.txt and use latest version of tensorflow(tested with tf-v1.14). Follow these simple steps to:
 
-```
+```shell
 git clone https://github.com/AkhilSinghRana/ContinuousControl_RLProject.git
 
 cd ContinuousControl_RLProject (cloned Repository root)
@@ -40,41 +40,42 @@ pip install -e .
 Note*- Windows users might have problem installing torch, in this case install it from [https://pytorch.org/].
 The above code will setup all the required dependencies for you. 
 
-Next you need to download the unity environment for collecting bananas, you should first clone this repo and also download, the unity environment according to the OS you're using. The steps are:
+Next you need to download the unity environment for Reacher agent. Download the unity environment according to the OS you're using.
 
-1. Download the environment from one of the links below.  You need only select the environment that matches your operating system:
     Single Agent Links:
     - Linux: [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P2/Reacher/one_agent/Reacher_Linux.zip)
     - Mac OSX: [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P2/Reacher/one_agent/Reacher.app.zip)
     - Windows (32-bit): [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P2/Reacher/one_agent/Reacher_Windows_x86.zip)
     - Windows (64-bit): [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P2/Reacher/one_agent/Reacher_Windows_x86_64.zip)
+    
     Multiple Agents Links(20 Agents):
+    - Linux: [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P2/Reacher/Reacher_Linux.zip)
+    - Mac OSX: [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P2/Reacher/Reacher.app.zip)
+    - Windows (32-bit): [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P2/Reacher/Reacher_Windows_x86.zip)
+    - Windows (64-bit): [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P2/Reacher/Reacher_Windows_x86_64.zip)
     
     
-You are now ready to open the jupyter notebook for training and testing the navigation agent!
+    
+You are now ready to open the jupyter notebook for training and testing the Reacher agent!
 
 #### 2. Testing/Loading model from checkpoint:
 
-The checkpoint from my training is saved in checkpoints [folder](./checkpoints). Follow the instructions from the provided notebook.
+The checkpoint from my training is saved in Checkpoints [folder](./Checkpoints). Follow the instructions from the provided notebook. Test the trained agent and see the results.
 
-``` jupyter notebook Navigation_test_Agent.ipynb ```
+``` jupyter notebook testReacherAgent.ipynb ```
 
 #### 3. Train your own Agent:
 
-If you are interested to train your own agent follow the instructions from below notebook.
+Instructions for training your own agent is shown in below notebook.
 
-``` jupyter notebook Navigation_Soln_Vector_ObsState.ipynb  ```
+``` jupyter notebook trainReacherAgent.ipynb  ```
  
 
 
 ### Results
 
-I was able to solve the environment in 432 episodes! This was achieved after a careful hyperparameter tuning, leading to a significant improvement compared to the initial base case settings. The trained agent is shown below, the resolution of the animation is low to reduce the size of this repository. You can also see, in the graph on right, how the agent is improving it's score over the episodes. To read about the hyper-Parameters settings, read my [report](./Report.pdf)
+The environment agent in this training was solved in 397 episodes! The algorithm used for training was DDPG. The results were achieved after a careful hyperparameter tuning, leading to a significant improvement. To read more about the algorithm, network architecture and hyper-Parameters settings read the [Report](./Report.pdf)
 
-
-| Trained Agent | Training Scores |
-|---------------|-----------------|
-|![Results](./Results/TrainedBananaCollectorAgent.gif) | ![Scores](./Results/BaseScores.png) |
-
-
+The training plot of the agent showing the scores improvement over the epsiodes is shown below.
+![Scores](./Results/ScoresPlot.png) 
 
