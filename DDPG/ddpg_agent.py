@@ -1,19 +1,4 @@
-'''
-reference:
-1.
-https://knowledge.udacity.com/questions/22843
 
-Anyway, here are a few hyperparameters you may want to try.
-
-Buffer size = 300000 (I think sample code uses 100000). As max time step could be up to 1000, a buffer size of 100000 may only hold 100 episodes of data.
-
-Network update frequency is once every 3 time steps. As described by others, ddpg algorithm is very sensitive to update frequency.
-
-The template code uses uniform distribution random function (random.random()) to generate noise. It is necessary to change this to use normal distribution random number generation.
-
-dx = self.theta * (self.mu - x) + self.sigma * np.random.standard_normal(len(x))
-
-'''
 import numpy as np
 import random
 import copy
